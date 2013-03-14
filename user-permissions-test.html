@@ -1,0 +1,16 @@
+<head>
+  <title>user-permissions-test</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{loginButtons}}
+</body>
+
+<template name="hello">
+	{{#if currentUser}}
+	  <input type="button" value="Click me to get an error (look in the console)" />
+	{{else}}
+		You need to login to test this.
+	{{/if}}
+</template>
